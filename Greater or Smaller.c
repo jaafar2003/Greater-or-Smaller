@@ -5,22 +5,22 @@
 int main()
 {
     int NUM;
-    int nombreMystere;
+    int MysteryNumber;
     const int MAX = 100, MIN = 1;
     
    srand(time(NULL));
-   nombreMystere = (rand() % (MAX - MIN + 1)) + MIN;
+  MysteryNumber = (rand() % (MAX - MIN + 1)) + MIN;
     
     do
     {
         printf(" Choose a number : ");
         scanf("%d", &NUM);
         
-        if ( NUM == nombreMystere )
+        if ( NUM == MysteryNumber )
         {
     printf(" Congralutation !\n ");
         }
-        else if ( NUM > nombreMystere )
+        else if ( NUM > MysteryNumber)
         {
             printf(" It's greater !\n");
         }
@@ -29,7 +29,7 @@ int main()
             printf(" It's smaller !!\n");
         }
         
-    } while( NUM != nombreMystere );
+    } while( NUM != MysteryNumber);
     
     return 0;
 }
